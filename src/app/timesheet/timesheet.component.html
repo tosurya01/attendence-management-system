@@ -1,0 +1,5 @@
+<form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)">
+    Entry Time: <input type="text" name="entry" formControlName="entry"><br>
+   Exit Time: <input type="text" name="exit" formControlName="exit"><br>
+    <input type="submit" name="submit">
+</form>

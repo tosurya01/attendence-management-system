@@ -1,0 +1,32 @@
+<h1 style="background-color: green" align = "center">Attendence Management System</h1>
+<h6 align = "right">{{todydate}}</h6>
+
+<table>
+        <tr><th><a routerLink="/adduser" routerLinkActive="active">Add User</a></th>
+       <th><a routerLink="/allusers" routerLinkActive="active">All Users</a></th>
+       <th><a routerLink="/deleteuser" routerLinkActive="active">Delete User</a></th>
+       <th><a routerLink="/updateuser" routerLinkActive="active">Update User</a></th>
+       <th><a routerLink="/timesheet" routerLinkActive="active">Timesheet</a></th>
+     </table>
+<hr>
+<form #userlogin="ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
+        User Name: <input type="text" name="username" ngModel><br>
+        Password: <input type="password" name="password" ngModel><br>
+        <input type="submit" value="Login" >
+</form> 
+<hr>
+
+<!--Template driven-->
+<!-- <form [formGroup]="formdata" (ngSubmit)= "onClickSubmit(formdata.value)">
+<input type="text" name="username" formControlName="username">
+<input type="password" name="password" formControlName="password" >
+<input type="submit" value="submit">
+</form> -->
+
+
+<!--Reactive driven-->
+
+
+
+<router-outlet></router-outlet>
+ 

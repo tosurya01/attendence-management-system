@@ -1,0 +1,4 @@
+<form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)">
+    Please enter deleted user name:<input type="text" name="username" formControlName="username"><br>
+    <input type="submit" name="delete user" value="Delete user">
+</form>
